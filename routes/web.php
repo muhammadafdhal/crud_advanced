@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('barang', 'DataBarangController@index')->name('barang');
+Route::get('barang/tambah','DataBarangController@create')->name('tambah');
+Route::post('barang/simpan', 'DataBarangController@store')->name('simpanData');
+Route::delete('barang/hapus/{id}','DataBarangController@destroy')->name('hapus');
