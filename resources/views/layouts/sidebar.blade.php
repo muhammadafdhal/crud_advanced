@@ -25,8 +25,15 @@
                     <li><a class="nav-link" href="layout-top-navigation.html">Top Navigation</a></li>
                 </ul>
             </li>
-            <li class=active><a class="nav-link" href="{{ route('barang') }}"><i class="far fa-square"></i> <span>
+            <li><a class="nav-link" href="{{ route('barang') }}"><i class="far fa-square"></i> <span>
                         CRUD</span></a></li>
+            <li class=active>
+                <a class="nav-link" href="{{ route('data') }}">
+                    <i class="far fa-square">
+                        </i> <span>
+                            ServerSide</span>
+                </a>
+            </li>
             {{-- <li class="dropdown">
                 <a href="#" class="nav-link has-dropdown"><i class="fas fa-th"></i>
                     <span>Bootstrap</span></a>

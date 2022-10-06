@@ -21,3 +21,8 @@ Route::get('barang', 'DataBarangController@index')->name('barang');
 Route::get('barang/tambah','DataBarangController@create')->name('tambah');
 Route::post('barang/simpan', 'DataBarangController@store')->name('simpanData');
 Route::delete('barang/hapus/{id}','DataBarangController@destroy')->name('hapus');
+
+Route::prefix('/users')->group(function(){
+    Route::get('/','DataUserController@index')->name('data');
+    Route::post('/tambah','DataUserController@create')->name('users-tambah');
+});
